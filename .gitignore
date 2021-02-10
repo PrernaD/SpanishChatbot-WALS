@@ -1,0 +1,7 @@
+*/models/*
+*/*.pyc
+*/*/.pyc
+venv/
+credentials.yml
+models/
+.idea/
