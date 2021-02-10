@@ -1,0 +1,125 @@
+nlu:
+- intent: greet
+  examples: |
+    - Ola
+    - Hola
+    - Buenos días
+    - Buenas tardes
+    - Buenas noches
+    - Good morning
+    - Muy buenas
+    - buenas
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - Hola a todas
+    - Hola a todos
+    - hello is anybody there
+    - Hola, hay alguien ahi
+    - hola robot
+    - quién eres tú?
+    - what are you?
+    - Lo que pasa
+    - ¿Aló?
+    - ¡Hace tiempo que no te veo!
+
+- intent: goodbye
+  examples: |
+    - Adiós
+    - Adiós.
+    - Hasta luego
+    - Adiós bot
+    - Adiós amigo
+    - adiós
+    - adiós por ahora
+    - nos vemos luego
+    - Tengo que irme.
+    - Nos vemos
+    - Buenas noches.
+    - Que tengas un buen día.
+    - Me voy.
+    - Hasta luego, caimán.
+    - Hablaremos pronto.
+    - Fin.
+    - terminar
+
+- intent: thanks
+  examples: |
+    - Gracias
+    - Muchas gracias
+    - Muchas gracias bot
+    - gra cias por eso
+    - saludos
+    - Salud, hermano.
+    - ¡bien, gracias!
+    - perfecto, gracias
+    - Muchas gracias por todo.
+    - gracias por la ayuda
+    - muchas gracias
+    - increíble, gracias
+    - guay, gracias
+    - genial, gracias
+    - sí, ¡gracias!
+
+- intent: affirm
+  examples: |
+    - y
+    - Y
+    - sí
+    - sí seguro
+    - absolutamente
+    - con seguridad
+    - sí sí sí
+    - definitivamente
+    - sí, lo hizo
+
+- intent: deny
+  examples: |
+    - no
+    - nunca
+    - No lo creo.
+    - No me gusta.
+    - no hay manera
+    - no realmente
+    - n
+    - N
+
+- intent: feedback
+  examples: |
+    - sí
+    - no
+    - Sí
+    - No
+    - SÍ
+    - NO
+#- intent: feedback
+#  examples: |
+#    -
+- intent: lang_search
+  examples: |
+    - Quiero saber sobre [hindi](language)
+    - ¿Pueden buscar en [español](language)?
+    - Necesito más información sobre [francés](language)
+    - Buscar [gujrati](language)
+    - ¿Sabe usted acerca de [chattisgarhi](language)?
+    - ¿Puede buscar [chattisgarhi](language)?
+    - ¿Podría hablarme de [oriya](language)?
+    - ¿Cómo es [malyalam](language)?
+    - [Gondi](language) es el idioma del que quiero saber más.
+    - ¿Qué sabes de [manipuri](language)?
+    - Tienes que hablarme de [chino mandarín](language).
+    - Dame información sobre [konkani](language).
+    - Realice una búsqueda de la lengua [santali](language).
+    - Solicito información sobre [marwadi](language).
+    - Dígame lo que sabe sobre [pashto](language)
+    - Hablemos de [francés](language).
+    - Dígame lo que sepa sobre [gondi](language).
+    - Háblame de [konkani](language).
+    - Quiero información sobre [marwadi](language).
+    - ¿Podría informarme sobre [malyalam](language)?
+    - ¿Puedo obtener información sobre [manipuri](language)?
+    - ¿Puedo pedirle que busque la lengua [santali](language)?
+    - ¿Podría realizar una búsqueda de la lengua [hindi](language)
+    - ¿Podría realizar una búsqueda de [gujrati](language) y conseguirme detalles sobre el idioma?
+    - Busca [oriya](language) y consígueme detalles, por favor.
