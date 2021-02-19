@@ -103,11 +103,11 @@ class ActionTenseSearch(Action):
 
             if len(out_row) > 0:
                 out_row = out_row[0]
-                out_text = "Verb %s is of type %s\n" % (out_row["infinitive"], out_row["tense"])
+                out_text = "Verb %s is of type %s \n" % (out_row["infinitive"], out_row["tense"])
                 dispatcher.utter_message(text = out_text)
                 out_text = "Un ejemplo en inglés es %s\n" % (out_row["verb_english"])
                 dispatcher.utter_message(text = out_text)
-                out_text = "Algunas otras formas son%s\n" % (out_row["form_1p"], out_row["form_2p"],out_row["form_3p"])
+                out_text = "Algunas otras formas son %s %s %s \n" % (out_row["form_1p"], out_row["form_2p"],out_row["form_3p"])
                 dispatcher.utter_message(text = out_text)
             else:
                 dispatcher.utter_message(text = "Did not find the word %s" % query_lang)
