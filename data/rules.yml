@@ -41,6 +41,12 @@ rules:
    - intent: tense_search
    - action: action_tense_search
 
+
+ - rule: ask for countries language are speaken
+   steps:
+   - intent: language_country
+   - action: action_lang_countries_search
+
   # - rule: submit form
  #   condition:
  #   - active_loop: newsletter_form

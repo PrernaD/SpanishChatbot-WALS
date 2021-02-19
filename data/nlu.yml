@@ -148,3 +148,14 @@ nlu:
 
 
 
+- intent: language_country
+  examples: |
+    - [spanish](language) speak
+    - [german](language) speak
+    - [english](language) speak
+    - [french](language) speak
+
+    - enter spanish word you want to check tense [you](language)
+
+
+
