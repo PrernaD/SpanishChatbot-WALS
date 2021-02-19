@@ -10,6 +10,9 @@ intents:
   - deny
   - lang_search
   - feedback
+  - politeness_search
+  - tense_search
+  - country_search
 #  - ask_feedback
 entities:
   - language
@@ -52,6 +55,9 @@ actions:
 - utter_greet
 - utter_goodbye
 - action_lang_search
+- action_countries_lang_search
+- action_tense_search
+- action_polite_search
 - utter_thanks
 - utter_ask_feedback
 

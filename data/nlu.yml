@@ -123,3 +123,28 @@ nlu:
     - ¿Podría realizar una búsqueda de la lengua [hindi](language)
     - ¿Podría realizar una búsqueda de [gujrati](language) y conseguirme detalles sobre el idioma?
     - Busca [oriya](language) y consígueme detalles, por favor.
+
+
+- intent: country_search
+  examples: |
+    - which country speaks [India](language)
+    - country of [español](language)?
+    - Necesito más información sobre [francés](language)
+    - Buscar [gujrati](language)
+
+
+- intent: politeness_search
+  examples: |
+    - How [you](language) is called in spanish
+    - How [he](language) is called in spanish
+    - How [she](language) is called in spanish
+    - How [they](language) is called in spanish
+    - How [i](language) is called in spanish
+
+- intent: tense_search
+  examples: |
+    - enter spanish word you want to check tense [abordar](language)
+    - enter spanish word you want to check tense [you](language)
+
+
+

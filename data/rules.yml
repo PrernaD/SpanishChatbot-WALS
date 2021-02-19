@@ -15,6 +15,12 @@ rules:
    - action: action_lang_search
    - action: utter_ask_feedback
 
+ - rule: country lang
+   steps:
+   - intent: country_search
+   - action: action_countries_lang_search
+   - action: utter_ask_feedback
+
  - rule: respond positively when the user says thank you
    steps:
    - intent: thanks
@@ -24,6 +30,16 @@ rules:
    steps:
    - intent: feedback
    - action: utter_replyto_feedback
+
+ - rule: ask for politeness
+   steps:
+   - intent: politeness_search
+   - action: action_polite_search
+
+ - rule: ask for tense
+   steps:
+   - intent: tense_search
+   - action: action_tense_search
 
   # - rule: submit form
  #   condition:
