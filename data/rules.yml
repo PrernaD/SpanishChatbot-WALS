@@ -35,17 +35,17 @@ rules:
    steps:
    - intent: politeness_search
    - action: action_polite_search
-
+#
  - rule: ask for tense
    steps:
    - intent: tense_search
    - action: action_tense_search
 
-
- - rule: ask for countries language are speaken
-   steps:
-   - intent: language_country
-   - action: action_lang_countries_search
+#
+# - rule: ask for countries language are speaken
+#   steps:
+#   - intent: language_country
+#   - action: action_lang_countries_search
 
   # - rule: submit form
  #   condition:

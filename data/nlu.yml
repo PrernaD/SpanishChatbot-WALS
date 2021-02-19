@@ -127,35 +127,42 @@ nlu:
 
 - intent: country_search
   examples: |
-    - which country speaks [India](language)
-    - country of [español](language)?
-    - Necesito más información sobre [francés](language)
-    - Buscar [gujrati](language)
+    - Que idiomas se hablan en [India](country)
+    - Que idiomas se hablan en [Spain](country)
+    - Que idiomas se hablan en [France](country)
+    - [India](country) habla?
 
 
 - intent: politeness_search
   examples: |
-    - How [you](language) is called in spanish
-    - How [he](language) is called in spanish
-    - How [she](language) is called in spanish
-    - How [they](language) is called in spanish
-    - How [i](language) is called in spanish
+    - ¿Cómo se dice [Ellas](polite) de manera educada en inglés?
+    - ¿Cómo le digo [por favor](polite) en inglés a alguien?
+    - ¿Puedes ayudarme a decir, [por favor, disculpa](polite)?
 
 - intent: tense_search
   examples: |
-    - enter spanish word you want to check tense [abordar](language)
-    - enter spanish word you want to check tense [you](language)
+    - Comprobar el tensa de [abordar](tense)
+    - Comprobar el tensa de [anunciar](tense)
+    - Comprobar el tensa de [enviar](tense)
+    - Comprobar el tensa de [envejecerse](tense)
+    - Comprobar el tensa de [esconderse](tense)
+    - Comprobar el tensa de [escribir](tense)
+    - Comprobar el tensa de [significar](tense)
+    - Comprobar el tensa de [terminar](tense)
+    - Comprobar el tensa de [venir](tense)
+    - Comprobar el tensa de [bailar](tense)
+    - Comprobar el tensa de [votar](tense)
+    - Comprobar el tensa de [vomit](tense)
 
+#
+#
+#- intent: language_country
+#  examples: |
+#    - Que idiomas se hablan en [India](country)
+#    - Que idiomas se hablan en [Spain](country)
+#    - Que idiomas se hablan en [France](country)
+#    - [India](country) habla?
 
-
-- intent: language_country
-  examples: |
-    - [spanish](language) speak
-    - [german](language) speak
-    - [english](language) speak
-    - [french](language) speak
-
-    - enter spanish word you want to check tense [you](language)
 
 
 
