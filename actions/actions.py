@@ -26,10 +26,13 @@ class ActionLanguageSearch(Action):
         data_path = os.path.join("data", "cldf-datasets-wals-014143f", "cldf", "languages.csv")
         wals_data = pd.read_csv(data_path)
         entities = list(tracker.get_latest_entity_values("language"))
-
+        langs = {'española': 'Spanish', 'español': 'Spanish', 'francesa': 'French', 'francés': 'French',
+                 'italiana': 'Italian', 'italiano': 'Italian','espanola': 'Spanish', 'espanol': 'Spanish', 'frances': 'French'}
         if len(entities) > 0:
             print("I have an entity")
             query_lang = entities.pop()
+            if query_lang.lower() in langs:
+                query_lang=langs[query_lang.lower()]
             query_lang = query_lang.lower().capitalize()
             print(query_lang)
             
