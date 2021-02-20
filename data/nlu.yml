@@ -154,14 +154,14 @@ nlu:
     - Comprobar el tensa de [votar](tense)
     - Comprobar el tensa de [vomit](tense)
 
-#
-#
-#- intent: language_country
-#  examples: |
-#    - Que idiomas se hablan en [India](country)
-#    - Que idiomas se hablan en [Spain](country)
-#    - Que idiomas se hablan en [France](country)
-#    - [India](country) habla?
+
+
+- intent: language_country
+  examples: |
+    - Dónde se habla [hindi](countrylang)?
+    - Dónde se habla [english](countrylang)?
+    - Dónde se habla [spanish](countrylang)?
+    - Dónde se habla [french](countrylang)?
 
 
 

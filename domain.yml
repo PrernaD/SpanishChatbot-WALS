@@ -13,13 +13,14 @@ intents:
   - politeness_search
   - tense_search
   - country_search
-#  - language_country
+  - language_country
   - ask_feedback
 entities:
   - language
   - country
   - tense
   - polite
+  - countrylang
 # slots:
 #   email:
 #     type: unfeaturized
@@ -62,7 +63,7 @@ actions:
 - action_countries_lang_search
 - action_tense_search
 - action_polite_search
-#- action_lang_countries_search
+- action_lang_countries_search
 - utter_thanks
 - utter_ask_feedback
 

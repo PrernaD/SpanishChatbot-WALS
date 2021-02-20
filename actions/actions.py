@@ -16,7 +16,6 @@ import pandas as pd
 import os
 
 class ActionLanguageSearch(Action):
-
     def name(self) -> Text:
         return "action_lang_search"
 
@@ -151,47 +150,47 @@ class ActionGetPoliteness(Action):
         return []
 
 
-# class ActionLanguageCountriesSearch(Action):
-#
-#     def name(self) -> Text:
-#         return "action_lang_countries_search"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         data_path = os.path.join("data", "language_country", "country_lang.csv")
-#         wals_data = pd.read_csv(data_path)
-#         entities = list(tracker.get_latest_entity_values("country"))
-#
-#         print(entities, 'lang_search')
-#         if len(entities) > 0:
-#             print("I have an language-country entity")
-#             query_lang = entities.pop()
-#             query_lang = query_lang.lower()
-#             print(query_lang)
-#
-#             count = 0
-#             index = []
-#             for lang in wals_data['language'].values:
-#                 if query_lang in lang.lower().strip().split(','):
-#                     index.append(count)
-#                 count += 1
-#
-#
-#             temp = wals_data.iloc[index]
-#
-#
-#             out_row = temp
-#
-#             if out_row.shape[0] > 0:
-#                 separator = ', '
-#                 temp = separator.join(list(out_row['country']))
-#                 out_text = "Country %s have these languages %s\n" % (temp, query_lang)
-#                 dispatcher.utter_message(text=out_text)
-#             else:
-#                 dispatcher.utter_message(text="Lo sentimos, no tenemos registros para ese idioma. %s" % query_lang)
-#         else:
-#             dispatcher.utter_message(text="lo siento, no pude entender")
-#
-#         return []
+class ActionLanguageCountriesSearch(Action):
+
+    def name(self) -> Text:
+        return "action_lang_countries_search"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        data_path = os.path.join("data", "language_country", "country_lang.csv")
+        wals_data = pd.read_csv(data_path)
+        entities = list(tracker.get_latest_entity_values("countrylang"))
+
+        print(entities, 'lang_search')
+        if len(entities) > 0:
+            print("I have an language-country entity")
+            query_lang = entities.pop()
+            query_lang = query_lang.lower()
+            print(query_lang)
+
+            count = 0
+            index = []
+            for lang in wals_data['language'].values:
+                if query_lang in lang.lower().strip().split(','):
+                    index.append(count)
+                count += 1
+
+
+            temp = wals_data.iloc[index]
+
+
+            out_row = temp
+
+            if out_row.shape[0] > 0:
+                separator = ', '
+                temp = separator.join(list(out_row['country']))
+                out_text = "Country %s have these languages %s\n" % (temp, query_lang)
+                dispatcher.utter_message(text=out_text)
+            else:
+                dispatcher.utter_message(text="Lo sentimos, no tenemos registros para ese idioma. %s" % query_lang)
+        else:
+            dispatcher.utter_message(text="lo siento, no pude entender")
+
+        return []
